@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 import requests
 from bs4 import BeautifulSoup
-from lxml.html.clean import clean_html
 from jinja2 import Template
 import os
 
@@ -25,6 +24,6 @@ html = f.read()
 
 # result = requests.get('https://laulima.hawaii.edu/portal')
 
-soup = BeautifulSoup(clean_html(html), 'lxml')
+soup = BeautifulSoup(html, 'lxml')
 
 print soup.find_all('li', 'nav-menu')
