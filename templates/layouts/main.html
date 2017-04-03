@@ -1,18 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en-US"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Language" content="en-US">
+
+<!-- this causes problems for layout needs investigating -->
+    <link href="/portal/styles/portalstyles.css?version=" type="text/css" rel="stylesheet" media="all">
+<!--[if gte IE 5]><![if lt IE 7]>
+    <link href="/portal/styles/portalstyles-ie5.css?version=" type="text/css" rel="stylesheet" media="all" />
+<![endif]><![endif]-->
+<link href="/library/skin/neo-default-uh/portal.css" type="text/css" rel="stylesheet" media="all">
+<link href="/library/js/jquery/cluetip/1.2.10/css/jquery.cluetip.css" type="text/css" rel="stylesheet" media="all">
+
+
+    <title>Laulima : Gateway : Welcome</title>
+<link href="/library/skin/tool_base.css?version=" type="text/css" rel="stylesheet" media="all">
+<link href="/library/skin/neo-default-uh/tool.css?version=" type="text/css" rel="stylesheet" media="all">
+
+<link rel="stylesheet" type="text/css" href="/globalalerts/css/gam.css"></head>
+<body class="portalBody">
+
+<!-- site.vm -->
+
+<!-- start includeSiteNav -->
+<div id="portalOuterContainer">
+    <div id="portalContainer">
+    
+    <div id="headerMin">
+      <div id="skipNav">
+      
+        <a href="#tocontent" class="skip internalSkip" title="jump to content" accesskey="c">
+        jump to content
+        </a>
+        <a href="#totoolmenu" class="skip internalSkip" title="jump to tools list" accesskey="l">
+          jump to tools list
+        </a>
+      </div>
+      
+      <div id="siteNavWrapper" class="undeterminedSiteType">
+        <div id="mastHead" role="banner">
+          <div id="mastLogo">
+            <img title="Logo" alt="Logo" src="/library/skin/neo-default-uh/images/logo_inst.gif">
+          </div>
+          <div id="mastBanner">
+            <img title="Banner" alt="Banner" src="/library/skin/neo-default-uh/images/banner_inst.gif">
+          </div>
+          <!-- login component -->
+          <div id="mastLogin">
+                      <form id="loginForm" method="post" action="/portal/xlogin" enctype="application/x-www-form-urlencoded">
+              <label for="eid">user id:</label>
+              <input name="eid" id="eid" type="text">
+              <label for="pw">password:</label>
+              <input name="pw" type="password" id="pw">
+              <input name="submit" type="submit" id="submit" value="Login">
+            </form>
+                    </div>
+          <!-- end login component -->
+        </div>
+      </div>
+      <div class="divColor" id="tabBottom">
+        <br>
+      </div>
+    </div>
+
+    
+<!-- START from includePageWithNav.vm -->
+
+<div id="container">
+
+
+  <!-- START from includePageNav.vm -->
+    <!-- start includePageNav -->
+      <div class="divColor" id="toolMenuWrap">
+        <div id="worksiteLogo">
+                          </div>
+                                <h1 class="skip" id="totoolmenu">Tools list begins here</h1>
+        <div id="toolMenu" role="navigation" aria-label="Tools list begins here">
+          <ul>
+                            <li class="selectedTool">
+              <a class="toolMenuLink " title="Welcome" role="presentation" aria-disabled="true">
+              <span class="toolMenuIcon icon-sakai-iframe "> </span><span class="menuTitle">Welcome</span>
+              </a>
+            </li>
+                                                              <li>
+              <a class="toolMenuLink " href="https://laulima.hawaii.edu/portal/site/!gateway/page/4e42f89c-17b3-45ba-8002-8a347e837e09" title="For accessing web content from an external website within the site.">
+              <span class="toolMenuIcon icon-sakai-iframe "></span><span class="menuTitle">Request Assistance</span>
+              </a>
+            </li>
+                                                                                      <li>
+              <a class="toolMenuLink " href="https://laulima.hawaii.edu/portal/site/!gateway/page/c8be8e70-80b8-41be-803a-0eaee266b8e4" title="For accessing web content from an external website within the site.">
+              <span class="toolMenuIcon icon-sakai-iframe "></span><span class="menuTitle">Request Account</span>
+              </a>
+            </li>
+                                                                                      <li>
+              <a class="toolMenuLink " href="https://laulima.hawaii.edu/portal/site/!gateway/page/ec6a674a-ef23-45cc-80f2-87117265b3da" title="For accessing web content from an external website within the site.">
+              <span class="toolMenuIcon icon-sakai-iframe "></span><span class="menuTitle">Faculty Docs</span>
+              </a>
+            </li>
+                                                                                      <li>
+              <a class="toolMenuLink " href="https://laulima.hawaii.edu/portal/site/!gateway/page/83b830e4-c4e8-4956-802c-d15534187267" title="For accessing web content from an external website within the site.">
+              <span class="toolMenuIcon icon-sakai-iframe "></span><span class="menuTitle">Student Docs</span>
+              </a>
+            </li>
+                                                                                      <li>
+              <a class="toolMenuLink " href="https://laulima.hawaii.edu/portal/site/!gateway/page/11b93d9f-6bff-44c4-88f2-1363caada7e8" title="For resetting guest user passwords | Displays a link with an annotation. URL and initial annotation can be set by admin, tool maintain user can change the annotation">
+              <span class="toolMenuIcon icon-sakai-resetpass "></span><span class="menuTitle">UH Guest Password Reset</span>
+              </a>
+            </li>
+                                                                 <li>
+                <a class="toolMenuLink" accesskey="6" href="https://laulima.hawaii.edu/portal/help/main" target="_blank" onclick="openWindow('https://laulima.hawaii.edu/portal/help/main', 
+                  'Help', 'resizable=yes,toolbar=no,scrollbars=yes,menubar=yes,width=1024,height=768'); 
+                  return false" title="Help">
+                <span class="toolMenuIcon icon-sakai-help"> </span><span class="menuTitle">Help</span>
+                <span class="skip">Opens in a new window</span> </a>
+                
+             </li>
+                </ul>
+        </div>
+        
+      <!-- Add subsite lists -->
+      
+
+      </div>
+      <div id="togglebar">
+      </div>
+      <h1 class="skip" id="tocontent">Content begins here</h1>
+    <!-- end includePageNav -->
+    <!-- end page nav -->
+<!-- END from includePageNav.vm -->
+
+
+<!-- START from includePageBody.vm -->
+          <div id="content" role="main"><div id="innercontent">
+    
+
+        <div id="col1">
+                        <!-- start Tool -->
+                                                                      <div class="portletTitleWrap">
+                <div class="portletTitle">
+                  <div class="title">
+                                                  <a href="https://laulima.hawaii.edu/portalnull?sakai.state.reset=true" target="_self" title="Reset">
+                                          <img src="/library/image/transparent.gif" alt="Reset" border="1"></a>
+                                <h2><span class="siteTitle">Gateway:</span> Welcome to Laulima!</h2>
+                  </div>
+                  <div class="action">
+                                      <a class="tool-directurl" href="#_self_directurl" rel="#_self_directurl" title="Direct link to this tool">
+                <img src="/library/image/transparent.gif" alt="Direct link to this tool" border="0">
+              </a>
+              <div id="_self_directurl" class="direct-url-wrap" style="display:none">
+                                  <input type="checkbox" onclick="toggleShortUrlOutput('https://laulima.hawaii.edu/portal/directtool/099ffefc-7fdc-4d1c-ae82-1e5023cec5e3/', this, '_self_urlholder');">
+                  <span>Short URL</span>
+                                <textarea class="_self_urlholder" rows="3" cols="50">https://laulima.hawaii.edu/portal/directtool/099ffefc-7fdc-4d1c-ae82-1e5023cec5e3/</textarea>            
+              </div>
+                                                      <a href="https://laulima.hawaii.edu/portal/help/main?help=sakai.iframe" title="Help for Welcome to Laulima!" target="_blank" onclick="openWindow('https://laulima.hawaii.edu/portal/help/main?help=sakai.iframe', 'Help',
+                  'resizable=yes,toolbar=no,scrollbars=yes,menubar=yes,width=1024,height=768'); return false">
+                
+                                <img src="/library/image/transparent.gif" alt="Help for Welcome to Laulima!" border="0">
+                  <span class="skip">Opens in a new window</span> </a>
+                              </div>
+                </div>
+              </div>
+                                <!-- end Tool -->
+          <!-- start Tool Body -->            
+                                      <div class="portletMainWrap">
+                  <div class="portletBody">
+
+<div class="alertMessage specialLink" style="display:none" id="alert099ffefc_7fdc_4d1c_ae82_1e5023cec5e3">Alert: 
+This page seems to have trouble loading.
+<a href="https://www.hawaii.edu/talent/laulima_tab/laulima_tab.php" onclick="window.open('https://www.hawaii.edu/talent/laulima_tab/laulima_tab.php','_blank'); return false;" target="_blank">Re-launch page in a new window.</a>
+<p class="closeMe"><a href="#" style="text-decoration:none !important;font-size:110%;color:#c00 !important" title="Click to dismiss ">x <span class="skip">Click to dismiss </span></a></p> 
+</div>
+<div class="wcwomenu"> <iframe id="id099ffefc_7fdc_4d1c_ae82_1e5023cec5e3" title="My Workspace Information Message" width="100%" style="width:100%;padding:0 !important; height:600px" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" src="https://www.hawaii.edu/talent/laulima_tab/laulima_tab.php">
+</iframe>
+</div>
+</div>
+
+              </div>
+                                  <!-- end Tool Body -->                        
+                      </div>
+            </div>
+        </div>
+      <div>
+      <!-- include bottom -->
+            <div id="footer" role="contentinfo">
+
+        <div class="footerExtNav">
+          <ul id="footerLinks"><li><span><a href="http://www.hawaii.edu/simp/laulima-feedback.php">Request Assistance</a></span></li><li><span><a href="https://www.hawaii.edu/itunesu/laulima/" target="uh">Request Account</a></span></li><li><span><a href="mailto:itech-l@lists.hawaii.edu">Give Us Feedback</a></span></li><li><span><a href="http://www.hawaii.edu/">University of Hawai'i</a></span></li><li><span><a href="http://www.hawaii.edu/its/">Info Tech Svcs</a></span></li></ul>
+        </div>
+        <div id="footerInfo">
+                <a href="http://sakaiproject.org" target="_blank">
+           <img border="0" src="/library/image/sakai_powered.gif" alt="Powered by Sakai">
+           <span class="skip"> (Opens in a new window)</span>
+          </a>
+      
+      <!-- end include Bottom -->
+        </div>
+        <div class="sakaiCopyrightInfo">Unauthorized access is prohibited by law in accordance with Hawai'i Revised Statutes. All use is subject to University of Hawai'i Executive Policy E2.210.</div>
+        <div class="serviceInfo">Laulima - 10.7-L1.0 - Sakai 10.7 (Kernel 10.7) - Server sak06</div>
+                <div class="server-time-container" aria-live="off">
+                    Server Time:
+          <span id="serverTime" class="server-time">Sun, 26 Mar 2017 16:58:09 HST</span>
+        </div>
+        
+
+
+          </div>
+          <!-- end includePageBody -->
+<!-- END from includePageBody.vm -->
+<div id="tutorial"></div>
+  </div>
+<!-- END from includePageWithNav.vm -->
+
+
+  </div>
+</div>
+<!-- end includeSiteNav -->
+<!-- end site.vm -->
+  
+
+</div><div id="cluetip-waitimage" style="position: absolute; display: none;"></div><div id="cluetip" style="position: absolute; display: none;"><div class="cluetip-outer" style="position: relative; z-index: 97;"><h3 class="cluetip-title ui-widget-header ui-cluetip-header"></h3><div class="cluetip-inner ui-widget-content ui-cluetip-content"></div></div><div class="cluetip-extra"></div><div class="cluetip-arrows ui-state-default"></div></div></body></html>
+
+
+
+
+
+
+
+
+
+<!-- <html lang="en">
 <head>
-<<<<<<< HEAD
 
  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-
-  <title>{% block title %}{% endblock %}</title>
-
-=======
->>>>>>> 1b09763c04cda1b0bac57f0e63d7360853627b67
-  <meta charset="UTF-8">
+b <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{% block title %}{% endblock %}</title>
@@ -36,5 +257,5 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-</body>
-</html>
+</body> -->
+<!-- </html> -->
