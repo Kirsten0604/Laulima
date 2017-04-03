@@ -15,11 +15,25 @@
         <div class="search-results"></div>
       </div>
     </li>
-    {% for item in nav[0] if item.find('[') > -1 %}
-      <li class="bold">
-        <a href="{{ item[item.find('[') + 1 : item.find(']')] }}" class="waves-effect waves-teal">{{ item }}</a>
-      </li>
-    {% endfor %}
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        {% for item in nav[0] if item.find('[') > -1 %}
+          <li class="bold">
+            <a class="collapsible-header waves-effect waves-teal">
+              {{ item }}
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">First</a></li>
+                <!-- <li><a href="#!">Second</a></li>
+                <li><a href="#!">Third</a></li>
+                <li><a href="#!">Fourth</a></li> -->
+              </ul>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
     {#
       <li class="bold">
         <a href="/login" class="waves-effect waves-teal">Login</a>
@@ -44,6 +58,40 @@
 {% block footer %}
 
   <div class="page-footer">
+    <div class="row">
+      <div class="row" style="margin-bottom: 0">
+        <div class="footerExtNav">
+          <ul id="footerLinks">
+            <li>
+              <span><a href="http://www.hawaii.edu/simp/laulima-feedback.php">Request Assistance</a></span>
+            </li>
+            <li>
+              <span><a href="https://www.hawaii.edu/itunesu/laulima/" target="uh">Request Account</a></span>
+            </li>
+            <li>
+              <span><a href="mailto:itech-l@lists.hawaii.edu">Give Us Feedback</a></span>
+            </li>
+            <li>
+              <span><a href="http://www.hawaii.edu/">University of Hawai'i</a></span>
+            </li>
+            <li>
+              <span><a href="http://www.hawaii.edu/its/">Info Tech Svcs</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 0">
+        <div class="col s10 offset-s1 l6 offset-l3 center">
+          <p style="margin: 0"><strong>Powered by Bedrock</strong><p>
+      </div>
+      <div class="row" style="margin-bottom: 0">
+        <div class="col s10 offset-s1 l8 offset-l2 center">
+          <p>Unauthorized access is prohibited by law in accordance with Hawai'i Revised Statutes.
+            All use is subject to University of Hawai'i Executive Policy E2.210.
+          </p>
+          <p>Laulima is property of the University of Hawaii. The Univserity of Hawaii is not affiliated with this website nor with Script Kitties LLC.</p>
+        </div>
+      </div>
   </div>
 
 {% endblock %}
