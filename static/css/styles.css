@@ -7,6 +7,16 @@ body {
     background-color: black;
 }
 
+element.style {
+    float: right;
+    padding: 17px 10px 10px;
+}
+
+h1 {
+    float: right;
+    background-color: blue;
+}
+
 .input-field {
   /*border: 1px solid #000;*/
     background-color: #e1e1e1;

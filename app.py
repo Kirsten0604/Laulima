@@ -13,9 +13,17 @@ def index():
     f = open('copied_html/index.html', 'r')
     html = f.read()
     # result = requests.get('https://laulima.hawaii.edu/portal')
+    # Probably Selenium
     soup = BeautifulSoup(html, 'lxml')
+    x = []
+    for li in soup.find_all('li', 'nav-menu'):
+        obj = {'text': li.find(text=True, recursive=True), 'a': []}
+        for ul in li.find_all('ul'):
+            for a in ul.find_all('a'):
+                obj['a'].append({'href': a.href, 'text': a.getText()})
+        x.append(obj)
     return render_template('pages/index.html',
-        nav=[[cell.text for cell in soup.find_all('li', 'nav-menu')] for row in soup]
+        nav=x
     )
 
 @app.route('/<path:path>')

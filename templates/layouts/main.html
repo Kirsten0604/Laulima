@@ -246,9 +246,9 @@ b <meta charset="UTF-8">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/ghpages-materialize.css') }}" media="screen,projection">
 </head>
 <body>
-  <div>
+  <header>
     {% block sidebar %}{% endblock %}
-  </div>
+  </header>
   <main>
     {% block content %}{% endblock %}
   </main>
@@ -262,5 +262,8 @@ b <meta charset="UTF-8">
 <!-- </html> -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+  <script>
+    $(".button-collapse").sideNav();
+  </script>
 </body>
 </html>
